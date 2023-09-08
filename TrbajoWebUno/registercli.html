@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Clientes</title>
+    <link rel="stylesheet" href="css/registercli.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Clientes</h1>
+        <form id="registrar_clientes">
+            <label for="nombre">Nombre del cliente:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="direccion" rows="4" required></textarea><br><br>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br><br>
+
+            <input type="button" value="Registrar Cliente" onclick="registrarCliente()" />
+            <input type="button" value="Ir al Menú" onclick="irAlMenu()" />
+        </form>
+
+        <h2>Clientes Registrados:</h2>
+        <ul id="listaClientes"></ul>
+
+        <button onclick="mostrarEstadisticasClientes()">Mostrar Estadísticas de Clientes</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
